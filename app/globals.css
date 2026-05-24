@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-bg text-ink antialiased;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 42, 42, 0.12), transparent 60%),
+    linear-gradient(180deg, #08080B 0%, #08080B 100%);
+}
+
+::selection {
+  background: #FF2A2A;
+  color: #fff;
+}
+
+@layer utilities {
+  .container-custom {
+    @apply max-w-[1240px] mx-auto px-5 md:px-8;
+  }
+
+  .text-gradient {
+    background: linear-gradient(180deg, #ffffff 0%, #b8b8c2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .red-gradient {
+    background: linear-gradient(180deg, #ff5454 0%, #ff2a2a 60%, #c81818 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 30%, transparent 75%);
+  }
+
+  .card {
+    @apply relative bg-bg-card border border-bg-line rounded-2xl;
+  }
+
+  .card-glow {
+    background:
+      radial-gradient(circle at 30% 0%, rgba(255, 42, 42, 0.18), transparent 55%),
+      linear-gradient(180deg, #14141B 0%, #0D0D12 100%);
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-bg-line bg-bg-card/60 text-xs text-ink-soft;
+  }
+}
