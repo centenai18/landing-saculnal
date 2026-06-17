@@ -19,7 +19,7 @@ export default function SobreIan() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="max-w-3xl mx-auto"
+          className="max-w-3xl"
         >
           <div className="pill">SOBRE MI</div>
           <h2 className="mt-5 font-display text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-gradient">
