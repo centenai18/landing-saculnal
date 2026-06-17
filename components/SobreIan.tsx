@@ -13,48 +13,13 @@ const valores = [
 export default function SobreIan() {
   return (
     <section id="sobre" className="relative py-24 md:py-32 border-t border-bg-line">
-      <div className="container-custom grid lg:grid-cols-12 gap-10 items-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="lg:col-span-5"
-        >
-          <div className="relative aspect-[4/5] max-w-md mx-auto">
-            <div className="absolute -inset-4 bg-red/20 blur-3xl rounded-full" />
-            <div className="relative h-full card overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-red/30 via-transparent to-transparent" />
-              <div className="absolute inset-0 grid place-items-center">
-                <svg viewBox="0 0 24 24" className="w-40 h-40 fill-white/10">
-                  <path d="M9 2a5 5 0 1 0 4.9 6h3.6L21 11.5 17.5 8H13.9A5 5 0 0 0 9 2Zm0 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z" />
-                </svg>
-              </div>
-              <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
-                <span className="pill">Ian · 27 años</span>
-                <span className="pill">
-                  <span className="w-1.5 h-1.5 rounded-full bg-red animate-pulse-glow" />
-                  En servicio
-                </span>
-              </div>
-              <div className="absolute bottom-4 left-4 right-4">
-                <div className="font-display text-4xl font-semibold tracking-tight">
-                  IAN
-                </div>
-                <div className="text-sm text-ink-soft mt-1">
-                  Cerrajero · 10+ años de oficio
-                </div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-
+      <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="lg:col-span-7"
+          className="max-w-3xl mx-auto"
         >
           <div className="pill">SOBRE MI</div>
           <h2 className="mt-5 font-display text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-gradient">
